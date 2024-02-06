@@ -11,7 +11,7 @@ import { useSetValue } from "./StateProvider";
 
 export default function Sidebar() {
   const [rooms, setRooms] = useState([]);
-  const [{ user }, dispatch] = useSetValue();
+  const [{ user }] = useSetValue();
 
   //Unsubscribe
   useEffect(() => {
@@ -33,6 +33,9 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebar_header">
         <Avatar src={user?.photoURL} />
+
+        <p>{user.displayName}</p>
+
         <div className="sidebar_headerRight">
           <IconButton>
             <DonutLargeIcon />

@@ -25,6 +25,7 @@ export default function Login() {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/250px-WhatsApp.svg.png"
           alt=""
         />
+        <h6>{user?.displayName}</h6>
         <div className="login_text">
           <h1>Sign in to WhatsApp</h1>
         </div>

@@ -11,6 +11,11 @@
   border-right: 1px solid lightgray;
 }
 
+.sidebar_header > p {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
 .sidebar_search {
   display: flex;
   align-items: center;
