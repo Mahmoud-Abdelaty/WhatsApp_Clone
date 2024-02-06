@@ -7,7 +7,7 @@ import { actionTypes } from "./reducer";
 
 // 2.53.10
 export default function Login() {
-  const [{}, dispatch] = useSetValue();
+  const [{ user }, dispatch] = useSetValue();
 
   const signIn = () => {
     auth
