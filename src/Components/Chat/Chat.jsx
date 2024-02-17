@@ -9,8 +9,8 @@ import {
 } from "@mui/icons-material";
 import "./Chat.css";
 import { useParams } from "react-router-dom";
-import db from "./firebase";
-import { useSetValue } from "./StateProvider";
+import db from "../../firebase";
+import { useSetValue } from "../Redux/StateProvider";
 import "firebase/firestore";
 
 export default function Chat() {

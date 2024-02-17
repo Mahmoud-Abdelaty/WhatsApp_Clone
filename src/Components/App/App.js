@@ -1,10 +1,10 @@
 import "./App.css";
 import React from "react";
-import Sidebar from "./Sidebar";
-import Chat from "./Chat";
+import Sidebar from "../Sidebar/Sidebar";
+import Chat from "../Chat/Chat";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Login from "./Login";
-import { useSetValue } from "./StateProvider";
+import Login from "../Login/Login";
+import { useSetValue } from "../Redux/StateProvider";
 
 function App() {
   const [{ user }] = useSetValue();

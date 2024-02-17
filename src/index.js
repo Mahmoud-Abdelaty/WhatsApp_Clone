@@ -1,16 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { StateProvider } from "./StateProvider";
-import reducer, { initialState } from "./reducer";
-
-// React higher-order components  == >  Higher-order components (HOCs) in React
-// are a pattern that allows you to reuse component logic.A higher -
-// order component is a function that takes a component and returns a
-//new component with additional props and / or behavior.This pattern is a way
-// to share behavior among React components without duplicating code.
+import App from "./Components/App/App";
+import { StateProvider } from "./Components/Redux/StateProvider";
+import reducer, { initialState } from "./Components/Redux/reducer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,8 +13,3 @@ root.render(
     </StateProvider>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -4,10 +4,10 @@ import DonutLargeIcon from "@mui/icons-material/DonutLarge";
 import ChatIcon from "@mui/icons-material/Chat";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { SearchOutlined } from "@mui/icons-material";
-import SidebarChat from "./SidebarChat";
-import db from "./firebase";
+import SidebarChat from "../SidebarChat/SidebarChat";
+import db from "../../firebase";
 import "./Sidebar.css";
-import { useSetValue } from "./StateProvider";
+import { useSetValue } from "../Redux/StateProvider";
 
 export default function Sidebar() {
   const [rooms, setRooms] = useState([]);

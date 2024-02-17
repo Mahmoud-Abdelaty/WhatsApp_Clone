@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "@mui/material";
 import "./Login.css";
-import { auth, provider } from "./firebase";
-import { useSetValue } from "./StateProvider";
-import { actionTypes } from "./reducer";
+import { auth, provider } from "../../firebase";
+import { useSetValue } from "../Redux/StateProvider";
+import { actionTypes } from "../Redux/reducer";
 
 // 2.53.10
 export default function Login() {

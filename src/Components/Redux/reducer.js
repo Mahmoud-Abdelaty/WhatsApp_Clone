@@ -12,7 +12,6 @@ const reducer = (state, action) => {
   switch (action.type) {
     case actionTypes.SET_User:
       return {
-        ...state,
         user: action.user,
       };
     default:
